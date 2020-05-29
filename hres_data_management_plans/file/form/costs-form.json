@@ -1,0 +1,56 @@
+{
+    "specificationVersion": 0,
+    "formId": "costs-form",
+    "formTitle": "Costs",
+    "class": "oforms-no-autofocus",
+    "elements": [
+        {
+            "type": "repeating-section",
+            "path": "cost",
+            "minimumCount": 0,
+            "required": true,
+            "allowDelete": true,
+            "elements": [
+                {
+                    "type": "text",
+                    "path": "title",
+                    "label": "Title",
+                    "required": true
+                },
+                {
+                    "type": "paragraph",
+                    "path": "description",
+                    "label": "Description"
+                },
+                {
+                    "type": "section",
+                    "template": "oforms:join",
+                    "label": "Value and currency",
+                    "elements": [
+                        {
+                            "type": "number",
+                            "path": "value",
+                            "required": {
+                                "path": "currency_code",
+                                "operation": "defined"
+                            }
+                        },
+                        {
+                            "type": "choice",
+                            "path": "currency_code",
+                            "required": {
+                                "path": "value",
+                                "operation": "defined"
+                            },
+                            "choices": [
+                                ["GBP", "GBP"],
+                                ["EUR", "EUR"],
+                                ["USD", "USD"]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "specificationVersion": 0,
+    "formId": "dmproadmap",
+    "formTitle": "DMPRoadmap ID",
+    "elements": [
+        {
+            "type": "text",
+            "path": "id",
+            "label": "ID of DMP plan in DMPRoadmap",
+            "required": true
+        }
+    ]
+}

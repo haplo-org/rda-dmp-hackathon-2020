@@ -1,0 +1,16 @@
+{
+  "pluginName": "hres_dmproadmap_integration",
+  "pluginAuthor": "Haplo Services",
+  "pluginVersion": 1,
+  "displayName": "DEMO: DMPRoadmap/DMPOnline Integration",
+  "displayDescription": "Proof of Concept: Integration to push DMPs to, and pull plans from, DMPOnline and DMPRoadmap",
+  "installSecret": "55ce2f0f1d646e025952e2911b28ae0ba026259c",
+  "apiVersion": 4,
+  "privilegesRequired": ["pKeychainRead", "pKeychainReadSecret", "pHTTPClient"],
+  "depend": [
+      "hres_data_management_plans"
+    ],
+  "load": [
+      "js/hres_dmproadmap_integration.js"
+    ]
+}

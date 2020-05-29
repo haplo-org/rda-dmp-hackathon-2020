@@ -1,0 +1,8 @@
+
+pageTitle("Pull DMP from DMPRoadmap")
+backLink(std:object:url(project))
+
+<form method="POST"> std:form:token()
+    std:form(form)
+    <p><input type="submit" value="Get it!"></p>
+</form>

@@ -1,0 +1,124 @@
+{
+    "specificationVersion": 0,
+    "formId": "datasets-form",
+    "formTitle": "Datasets",
+    "class": "oforms-no-autofocus",
+    "elements": [
+        {
+            "type": "repeating-section",
+            "path": "dataset",
+            "minimumCount": 1,
+            "required": true,
+            "allowDelete": true,
+            "elements": [
+                {
+                    "type": "text",
+                    "path": "title",
+                    "label": "Title",
+                    "required": true
+                },
+                {
+                    "type": "paragraph",
+                    "path": "description",
+                    "label": "Description of the dataset"
+                },
+                {
+                    "type": "choice",
+                    "path": "type",
+                    "label": "Type of dataset",
+                    "required": true,
+                    "choices": [
+                        ["text", "Text"],
+                        ["image", "Image"],
+                        ["archive", "Archive"],
+                        ["audio", "Audio"],
+                        ["slideshow", "Slideshow"],
+                        ["spreadsheet", "Spreadsheet"],
+                        ["video", "Video"]
+                    ]
+                },
+                {
+                    "type": "choice",
+                    "path": "expected_size",
+                    "label": "Expected size of dataset",
+                    "choices": [
+                        [
+                            "unknown",
+                            "Don't know"
+                        ],
+                        [
+                            "0gb4gb",
+                            "0GB - 4GB"
+                        ],
+                        [
+                            "4gb128gb",
+                            "4GB - 128GB"
+                        ],
+                        [
+                            "128gb1tb",
+                            "128GB - 1TB"
+                        ],
+                        [
+                            "1tb",
+                            "1TB +"
+                        ]
+                    ]
+                },
+                {
+                    "type": "repeating-section",
+                    "path": "keywords",
+                    "label": "Keywords to describe the dataset",
+                    "explanation": "Enter one keyword per box",
+                    "elements": [
+                        {
+                            "type": "text",
+                            "path": "."
+                        }
+                    ]
+                },
+                {
+                    "type": "choice",
+                    "path": "personal_data",
+                    "label": "Does this dataset contain personal data?",
+                    "required": true,
+                    "style": "radio-horizontal",
+                    "choices": [
+                        ["yes", "Yes"],
+                        ["no", "No"],
+                        ["unknown", "Unknown"]
+                    ]
+                },
+                {
+                    "type": "choice",
+                    "path": "sensitive_data",
+                    "label": "Does this dataset contain sensitive data?",
+                    "required": true,
+                    "style": "radio-horizontal",
+                    "choices": [
+                        ["yes", "Yes"],
+                        ["no", "No"],
+                        ["unknown", "Unknown"]
+                    ]
+                },
+                {
+                    "type": "repeating-section",
+                    "path": "data_quality_assurances",
+                    "label": "Data Quality Assurance",
+                    "inlineGuidanceNote": "E.g. We use file naming convention...",
+                    "elements": [
+                        {
+                            "type": "paragraph",
+                            "path": "."
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "path": "preservation_statement",
+                    "label": "Data preservation statement",
+                    "inlineGuidanceNote": "E.g. Must be preserved to enable..."
+                }
+            ]
+        }
+    ]
+}

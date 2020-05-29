@@ -1,0 +1,30 @@
+{
+  "pluginName": "hres_data_management_plans",
+  "pluginAuthor": "Haplo Services",
+  "pluginVersion": 1,
+  "displayName": "Hres Data Management Plans",
+  "displayDescription": "Generic data managment plans implementation",
+  "installSecret": "3869714a23edd6827a2198478cef16c7b3987364",
+  "apiVersion": 4,
+  "privilegesRequired": ["pDatabase", "pFileTransformPipeline"],
+  "depend": [
+      "std_document_store",
+      "std_reporting",
+      "hres_digital_object_identifier",
+      "std_workflow",
+      "hres_schema_projects",
+      "hres_schema"
+    ],
+  "use": [
+    "std:document_store",
+    "std:reporting",
+    "hres:doi"
+  ],
+  "load": [
+      "js/hres_data_management_plans.js",
+      "js/dmp_forms.js",
+      "js/dmp_document.js",
+      "js/dmp_reporting.js"
+    ],
+  "respond": ["/do/hres-data-management-plans"]
+}

@@ -1,0 +1,30 @@
+{
+    "specificationVersion": 0,
+    "formId": "default-title-form",
+    "formTitle": "Data management plan",
+    "class": "oforms-no-autofocus",
+    "elements": [
+        {
+            "type": "text",
+            "path": "title",
+            "label": "Plan title",
+            "required": true
+        },
+        {
+            "type": "paragraph",
+            "path": "description",
+            "label": "Description"
+        },
+        {
+            "type": "choice",
+            "path": "language",
+            "label": "Language",
+            "required": true,
+            "choices": [
+                ["eng", "English"],
+                ["fra", "French"],
+                ["spa", "Spanish"]
+            ]
+        }
+    ]
+}

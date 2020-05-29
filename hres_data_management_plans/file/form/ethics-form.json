@@ -1,0 +1,31 @@
+{
+    "specificationVersion": 0,
+    "formId": "ethics-form",
+    "formTitle": "Ethical issues",
+    "class": "oforms-no-autofocus",
+    "elements": [
+        {
+            "type": "choice",
+            "style": "radio-horizontal",
+            "path": "ethical_issues_exist",
+            "label": "Are there ethics issues related to the data this DMP describes?",
+            "required": true,
+            "choices": [
+                ["yes", "Yes"],
+                ["no", "No"],
+                ["unknown", "Unknown"]
+            ]
+        },
+        {
+            "type": "text",
+            "path": "ethical_issues_report",
+            "label": "Location of the report on ethical issues",
+            "inlineGuidanceNote": "Please include a URL to any report on the ethical issues related to this DMP. This could be an ethics application inside of Haplo or an external source."
+        },
+        {
+            "type": "paragraph",
+            "path": "ethical_issues_description",
+            "label": "Description"
+        }
+    ]
+}
