@@ -1,10 +1,10 @@
-#RDA machine-actionable Data Management Plans hackathon
+# RDA machine-actionable Data Management Plans hackathon
 
 The code in this repository was used for the [RDA hackathon on maDMPs 2020](https://rda-dmp-common.github.io/hackathon-2020/).
 
 **These plugins should not be used in a production environment** without further development and QA.
 
-##Proof of Concept functionality achieved:
+## Proof of Concept functionality achieved:
 
 Users are now able to:
 
@@ -19,15 +19,15 @@ For development purposes this plugin should be installed alongside the rest of t
 
 The repository contains three plugins:
 
-###`hres_dmproadmap_integration`
+### `hres_dmproadmap_integration`
 
 A new plugin for communicating with the WIP [DMPRoadmap v1 API](https://github.com/DMPRoadmap/roadmap/wiki/API-Documentation-V1). This correctly exchanges authentication tokens, and allows users to import DMPs created within DMPRoadmap to Haplo.
 
-###`hres_data_management_plans`
+### `hres_data_management_plans`
 
 A development version of the open-source [Haplo DMP](https://www.haplo.com/news/haplo-repository-dmp) plugin. This adds temporary UI to allow users to connect to DMPRoadmap.
 
-###`hres_data_management_plans_standalone`
+### `hres_data_management_plans_standalone`
 
 A proof of concept API to expose DMPs from Haplo to external systems. The `/api/hres-data-management-plans-standalone/get-plan/PROJECT_REF` endpoint returns the DMP for a project as a JSON document.
 
